@@ -11,7 +11,7 @@ myMax = [' ', 0]
 with open(file_path) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+   
     for row in csvreader:
         myLength +=1
         myProfit = int(row[1])
@@ -25,7 +25,8 @@ with open(file_path) as csvfile:
             myMax[1] = myProfit
 
 
-myAvg = total_net/myLength
+myAvgProfit = total_net/myLength
+myAvg = "{:.2f}".format(myAvgProfit)
 print("Financial Analysis")
 print("--------------------------")
 print(f"Total Months: {myLength}")
