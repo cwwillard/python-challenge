@@ -34,7 +34,7 @@ print(f"Average Change: {myAvg}")
 print(f"Greatest Increase in Profits: {myMax}")
 print(f"Greatest Decrease in Profits: {myMin}")
 
-output_path = os.join.path("Analysis", "budget_analysis.csv")
+output_path = os.path.join("Analysis", "budget_analysis.csv")
 with open(output_path, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
     csvwriter.writerow(['Total Months', 
