@@ -26,8 +26,10 @@ with open(file_path) as csvfile:
 
 
 myAvg = total_net/myLength
-print (myLength)
-print(myAvg)
-print(myMin)
-print(myMax)   
-print(total_net)
+print("Financial Analysis")
+print("--------------------------")
+print(f"Total Months: {myLength}")
+print(f"Total: {total_net}")
+print(f"Average Change: {myAvg}")
+print(f"Greatest Increase in Profits: {myMax}")
+print(f"Greatest Decrease in Profits: {myMin}")
